@@ -1,6 +1,14 @@
 'use strict';
 
-const element = document.querySelector('img');
+const spider = document.querySelector('.spider');
+const wall = document.querySelector('div');
 
-element.style.left = '175px';
-element.style.top = '175px';
+const spiderX = spider.getBoundingClientRect();
+const wallY = wall.getBoundingClientRect();
+
+const left = (wallY.width - spiderX.width) / 2;
+const tops = (wallY.height - spiderX.height) / 2;
+
+spider.style.position = 'absolute';
+spider.style.left = `${left}px`;
+spider.style.top = `${tops}px`;
