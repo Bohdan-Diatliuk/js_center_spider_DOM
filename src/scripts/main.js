@@ -1,7 +1,7 @@
 'use strict';
 
 const spider = document.querySelector('.spider');
-const wall = document.querySelector('div');
+const wall = document.querySelector('.wall');
 
 const spiderX = spider.getBoundingClientRect();
 const wallY = wall.getBoundingClientRect();
